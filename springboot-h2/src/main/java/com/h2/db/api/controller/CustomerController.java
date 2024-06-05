@@ -27,7 +27,6 @@ public class CustomerController {
 	@PostMapping("/api/v1/account")
 	public ResponseEntity<List<String>> saveEmployee(@RequestBody Customer employee) {
 		
-		
 		List<String> status = new ArrayList<>();
 		
 		if(StringUtils.isEmpty(employee.getCustomeraddress1()) || StringUtils.isEmpty(employee.getCustomerEmail()) ||
